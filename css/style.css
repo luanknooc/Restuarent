@@ -1,0 +1,180 @@
+/*
+Theme Name: Cafe & Restaurent HORI
+Theme URI:
+Version: 1.0
+***/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+body {
+  font-family: 'Montserrat-Regular';
+  background-color: #fff; }
+  body a {
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: none; }
+  body #wrapper {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    font-family: 'Montserrat-Regular'; }
+    body #wrapper .navbar.navbar-default, body #wrapper .navbar.navbar-default .navbar-brand img, body #wrapper .carousel .slide-title a span, body #wrapper #menu .lunch-time ul li.book-now span, body #wrapper #menu .dinner-time ul li.book-now span {
+      -o-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+
+#wrapper {
+  /* Nav */
+  /*
+  Slides
+  */
+  /* Menu */
+  /* News	*/ }
+  #wrapper .navbar.navbar-default {
+    background: url(../images/bg-header.png) repeat top left;
+    display: block;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    z-index: 20;
+    position: fixed;
+    width: 100%; }
+    #wrapper .navbar.navbar-default .navbar-brand {
+      padding: 0 15px; }
+    #wrapper .navbar.navbar-default .tel, #wrapper .navbar.navbar-default .navbar-nav li a {
+      line-height: 55px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff; }
+    #wrapper .navbar.navbar-default .navbar-nav li a {
+      padding: 0 25px; }
+      #wrapper .navbar.navbar-default .navbar-nav li a .book-now {
+        border: 2px solid #fff !important;
+        border-radius: 3px;
+        padding: 5px 15px; }
+      #wrapper .navbar.navbar-default .navbar-nav li a:hover {
+        margin-top: -5px; }
+    #wrapper .navbar.navbar-default .navbar-nav li .instagram, #wrapper .navbar.navbar-default .navbar-nav li .en {
+      padding-right: 0;
+      padding-left: 10px; }
+    #wrapper .navbar.navbar-default .navbar-nav li .facebook {
+      padding-right: 0;
+      padding-left: 30px; }
+    #wrapper .navbar.navbar-default .navbar-nav li .vi {
+      padding: 0;
+      color: #333; }
+  #wrapper .carousel {
+    clear: both; }
+    #wrapper .carousel .carousel-control {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      z-index: 11;
+      display: block;
+      top: 45.275%; }
+    #wrapper .carousel .carousel-control.left {
+      background: #fff;
+      left: 0;
+      line-height: 50px;
+      color: #111;
+      text-shadow: none; }
+    #wrapper .carousel .carousel-control.right {
+      background: #fff;
+      line-height: 50px;
+      color: #111;
+      text-shadow: none;
+      right: 0; }
+    #wrapper .carousel .slide-title {
+      position: absolute;
+      top: 35%;
+      z-index: 16; }
+      #wrapper .carousel .slide-title h3 {
+        font-size: 48px;
+        color: #fff;
+        text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+        margin-bottom: 25px; }
+      #wrapper .carousel .slide-title a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        text-align: center; }
+        #wrapper .carousel .slide-title a span {
+          padding: 12px 30px;
+          background: #f47920;
+          border-radius: 3px;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+          cursor: pointer; }
+          #wrapper .carousel .slide-title a span i {
+            margin-left: 15px; }
+        #wrapper .carousel .slide-title a:hover span {
+          background: #ff9141; }
+  #wrapper #menu {
+    clear: both;
+    display: block;
+    margin-top: 100px;
+    position: relative; }
+    #wrapper #menu .lunch-time, #wrapper #menu .dinner-time {
+      background: url(../images/bg-pattern.png) repeat top left;
+      border: 1px solid #ffc499;
+      padding: 25px;
+      width: 99%; }
+      #wrapper #menu .lunch-time ul, #wrapper #menu .dinner-time ul {
+        list-style: none; }
+        #wrapper #menu .lunch-time ul li, #wrapper #menu .dinner-time ul li {
+          display: block;
+          font-size: 20px;
+          text-align: right;
+          margin-bottom: 8px;
+          padding-top: 8px;
+          border-top: 1px solid #ffc499; }
+          #wrapper #menu .lunch-time ul li:first-child, #wrapper #menu .dinner-time ul li:first-child {
+            margin-top: 25px;
+            border-top: none; }
+          #wrapper #menu .lunch-time ul li span, #wrapper #menu .dinner-time ul li span {
+            width: 100%;
+            color: #333;
+            clear: both; }
+          #wrapper #menu .lunch-time ul li i, #wrapper #menu .dinner-time ul li i {
+            font-size: 24px;
+            color: #f47920;
+            width: 100%;
+            display: block; }
+        #wrapper #menu .lunch-time ul li.book-now, #wrapper #menu .dinner-time ul li.book-now {
+          text-align: center;
+          padding-top: 35px;
+          cursor: pointer; }
+          #wrapper #menu .lunch-time ul li.book-now span, #wrapper #menu .dinner-time ul li.book-now span {
+            font-size: 20px;
+            color: #fff;
+            padding: 12px 25px;
+            background-color: #f47920;
+            border-radius: 3px; }
+            #wrapper #menu .lunch-time ul li.book-now span:hover, #wrapper #menu .dinner-time ul li.book-now span:hover {
+              background-color: #ffc499;
+              color: #333; }
+    #wrapper #menu .lunch-time h3 {
+      text-indent: -9999px;
+      background: url(../images/lunch-title.png) no-repeat top center;
+      display: block;
+      width: auto;
+      height: 77px;
+      margin-top: -65px; }
+    #wrapper #menu .dinner-time h3 {
+      text-indent: -9999px;
+      background: url(../images/dinner-title.png) no-repeat top center;
+      display: block;
+      width: auto;
+      height: 77px;
+      margin-top: -65px; }
+  #wrapper #news {
+    display: block;
+    position: relative;
+    margin-top: 80px;
+    border: 1px solid #ffc499; }
+
+/*# sourceMappingURL=style.css.map */
