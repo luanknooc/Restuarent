@@ -21,7 +21,7 @@ body {
     display: block;
     position: relative;
     font-family: 'Montserrat-Regular'; }
-    body #wrapper .navbar.navbar-default, body #wrapper .navbar.navbar-default .navbar-brand img, body #wrapper .carousel .slide-title a span, body #wrapper #menu .lunch-time ul li.book-now span, body #wrapper #menu .dinner-time ul li.book-now span {
+    body #wrapper .navbar.navbar-default, body #wrapper .navbar.navbar-default .navbar-brand img, body #wrapper .carousel .slide-title a span, body #wrapper #menu .lunch-time ul li.book-now span, body #wrapper #menu .dinner-time ul li.book-now span, body #wrapper #about-us .col-md-4 img {
       -o-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
@@ -34,7 +34,8 @@ body {
   Slides
   */
   /* Menu */
-  /* News	*/ }
+  /* News	*/
+  /* About Us */ }
   #wrapper .navbar.navbar-default {
     background: url(../images/bg-header.png) repeat top left;
     display: block;
@@ -69,7 +70,8 @@ body {
       padding: 0;
       color: #333; }
   #wrapper .carousel {
-    clear: both; }
+    clear: both;
+    margin: 0 auto; }
     #wrapper .carousel .carousel-control {
       position: absolute;
       width: 50px;
@@ -112,17 +114,20 @@ body {
           #wrapper .carousel .slide-title a span i {
             margin-left: 15px; }
         #wrapper .carousel .slide-title a:hover span {
-          background: #ff9141; }
+          background-color: #333; }
   #wrapper #menu {
     clear: both;
     display: block;
     margin-top: 100px;
     position: relative; }
+    #wrapper #menu .col-md-6 {
+      padding-left: 0;
+      padding-right: 0; }
     #wrapper #menu .lunch-time, #wrapper #menu .dinner-time {
       background: url(../images/bg-pattern.png) repeat top left;
       border: 1px solid #ffc499;
       padding: 25px;
-      width: 100%; }
+      width: 98%; }
       #wrapper #menu .lunch-time ul, #wrapper #menu .dinner-time ul {
         list-style: none; }
         #wrapper #menu .lunch-time ul li, #wrapper #menu .dinner-time ul li {
@@ -155,28 +160,91 @@ body {
             background-color: #f47920;
             border-radius: 3px; }
             #wrapper #menu .lunch-time ul li.book-now span:hover, #wrapper #menu .dinner-time ul li.book-now span:hover {
-              background-color: #ffc499;
-              color: #333; }
-    #wrapper #menu .lunch-time h3 {
-      text-indent: -9999px;
-      background: url(../images/lunch-title.png) no-repeat top center;
-      display: block;
-      width: auto;
-      height: 77px;
-      margin-top: -65px; }
-    #wrapper #menu .dinner-time h3 {
-      text-indent: -9999px;
-      background: url(../images/dinner-title.png) no-repeat top center;
-      display: block;
-      width: auto;
-      height: 77px;
-      margin-top: -65px; }
+              background-color: #333; }
+    #wrapper #menu .lunch-time {
+      margin-right: 15px; }
+      #wrapper #menu .lunch-time h3 {
+        text-indent: -9999px;
+        background: url(../images/lunch-title.png) no-repeat top center;
+        display: block;
+        width: auto;
+        height: 77px;
+        margin-top: -65px; }
+    #wrapper #menu .dinner-time {
+      margin-left: 15px; }
+      #wrapper #menu .dinner-time h3 {
+        text-indent: -9999px;
+        background: url(../images/dinner-title.png) no-repeat top center;
+        display: block;
+        width: auto;
+        height: 77px;
+        margin-top: -65px; }
   #wrapper #newsCarousel {
     display: block;
     position: relative;
     border: 1px solid #ffc499;
     max-width: 1170px;
-    width: 84.5%;
-    margin: 80px auto; }
+    margin: 80px auto 0;
+    background: url(../images/bg-pattern.png) repeat top left; }
+    #wrapper #newsCarousel .col-md-6 {
+      padding-left: 0;
+      padding-right: 0; }
+    #wrapper #newsCarousel .paragrap {
+      padding: 25px;
+      display: block; }
+      #wrapper #newsCarousel .paragrap h3 {
+        font-size: 26px;
+        color: #333;
+        line-height: 32px;
+        margin-top: 0px;
+        margin-bottom: 10px; }
+      #wrapper #newsCarousel .paragrap span {
+        font-size: 14px;
+        color: #999; }
+      #wrapper #newsCarousel .paragrap p {
+        font-size: 16px;
+        color: #333;
+        line-height: 24px;
+        margin-top: 10px; }
+  #wrapper #about-us {
+    margin: 60px auto 0;
+    display: block;
+    text-align: center; }
+    #wrapper #about-us h3 {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 40px; }
+      #wrapper #about-us h3:before {
+        content: "";
+        display: block;
+        width: calc(50% - 200px);
+        position: absolute;
+        bottom: 48px;
+        left: 10px;
+        border-bottom: 1px solid #ffc499; }
+      #wrapper #about-us h3:after {
+        content: "";
+        display: block;
+        width: calc(50% - 200px);
+        position: absolute;
+        bottom: 48px;
+        right: 10px;
+        border-bottom: 1px solid #ffc499; }
+    #wrapper #about-us .col-md-4 {
+      padding-left: 0;
+      padding-right: 0;
+      cursor: pointer; }
+      #wrapper #about-us .col-md-4:hover img {
+        transf-ms-transform: scale(1.03);
+        /* IE 9 */
+        -webkit-transform: scale(1.03);
+        /* Safari */
+        transform: scale(1.03); }
+      #wrapper #about-us .col-md-4 h4 {
+        font-size: 26px;
+        color: #333;
+        text-align: left;
+        text-indent: 10px; }
 
 /*# sourceMappingURL=style.css.map */
