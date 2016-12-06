@@ -122,7 +122,7 @@ body {
       background: url(../images/bg-pattern.png) repeat top left;
       border: 1px solid #ffc499;
       padding: 25px;
-      width: 99%; }
+      width: 100%; }
       #wrapper #menu .lunch-time ul, #wrapper #menu .dinner-time ul {
         list-style: none; }
         #wrapper #menu .lunch-time ul li, #wrapper #menu .dinner-time ul li {
@@ -171,10 +171,12 @@ body {
       width: auto;
       height: 77px;
       margin-top: -65px; }
-  #wrapper #news {
+  #wrapper #newsCarousel {
     display: block;
     position: relative;
-    margin-top: 80px;
-    border: 1px solid #ffc499; }
+    border: 1px solid #ffc499;
+    max-width: 1170px;
+    width: 84.5%;
+    margin: 80px auto; }
 
 /*# sourceMappingURL=style.css.map */
