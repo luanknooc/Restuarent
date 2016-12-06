@@ -1,0 +1,207 @@
+/*
+Theme Name: Cafe & Restaurent HORI
+Theme URI:
+Version: 1.0
+***/
+
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+		url('#{$src}.woff') format('woff'), // standards
+		url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+		url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+@include font-face('Montserrat-Regular', '../fonts/Montserrat-Regular');
+
+body {
+	font-family: 'Montserrat-Regular';
+	background-color: #fff;
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	#wrapper{
+		overflow: hidden;
+		display: block;
+		position: relative;
+		font-family: 'Montserrat-Regular';
+		%allTrans{
+			-o-transition:all .2s ease-in-out;
+			-moz-transition:all .2s ease-in-out;
+			-webkit-transition:all .2s ease-in-out;
+			-ms-transition:all .2s ease-in-out;
+			transition:all .2s ease-in-out;
+		}
+	}
+}
+#wrapper{
+
+	/* Nav */
+	.navbar.navbar-default{
+		background: url(../images/bg-header.png) repeat top left;
+		display: block;
+		border: 0;
+		border-radius: 0;
+		margin: 0;
+		z-index: 20;
+		position: fixed;
+		width: 100%;
+		@extend %allTrans;
+		
+		.navbar-brand{
+			padding: 0 15px;
+			img{
+				@extend %allTrans;
+			}
+		}
+		
+		.tel{
+			line-height: 55px;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.navbar-nav{
+			li{
+				a{
+					@extend .tel;
+					padding: 0 25px;
+					.book-now{
+						border: 2px solid #fff !important;
+						border-radius: 3px;
+						padding: 5px 15px;
+					}
+					&:hover{
+						margin-top: -5px;
+					}
+				}
+				%pad{
+					padding-right: 0;
+					padding-left: 10px;
+				}
+				.instagram, .en{
+					@extend %pad;
+				}
+				.facebook{
+					padding-right: 0;
+					padding-left: 30px;
+				}
+				.vi{
+					padding: 0;
+					color: #333;
+				}
+			}
+		}
+	}
+	/*
+	Slides
+	*/
+	.carousel{
+		clear: both;
+		.carousel-control{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			z-index: 11;
+			display: block;
+			top: 45.275%;
+		}
+		.carousel-control.left{
+		    background: #fff;
+		    left: 0;
+		    line-height: 50px;
+		    color: #111;
+		    text-shadow: none;
+		}
+		.carousel-control.right{
+			background: #fff;
+		    line-height: 50px;
+		    color: #111;
+		    text-shadow: none;
+			right: 0;
+		}
+		.slide-title{
+			position: absolute;
+			top: 35%;
+			z-index: 16;
+			h3{
+				font-size: 48px;
+				color: #fff;
+				text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+				margin-bottom: 25px;
+			}
+			a{
+				display: block;
+				color: #fff;
+				font-size: 18px;
+				text-align: center;
+				span{
+					@extend %allTrans;
+					padding: 12px 30px;
+					background: #f47920;
+					border-radius: 3px;
+					box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+					cursor: pointer;
+					i{
+						margin-left: 15px;
+					}
+				}
+				&:hover{
+					span{
+						background: #ff9141;
+					}
+				}
+			}
+		}
+	}
+
+	/* Menu */
+	#menu{
+		clear: both;
+		display: block;
+		margin-top: 60px;
+		position: relative;
+		.lunch-time, .dinner-time{
+			background: url(../images/bg-pattern.png) repeat top left;
+			border: 1px solid #ffc499;
+			padding: 25px;
+			width: 99%;
+			h3{
+				text-indent: -9999px;
+				text-align: center;
+				background: url(../images/lunch-title.png) no-repeat top left;
+				position: absolute;
+				top: -25px;
+				left: 25%;
+			}
+			ul{
+				list-style: none;
+				li{
+					display: block;
+					font-size: 20px;
+					text-align: right;
+					margin-top: 15px;
+					span{
+						width: 100%;
+						color: #333;
+						clear: both;
+					}
+					i{
+						font-size: 24px;
+						color: #f47920;
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+}
