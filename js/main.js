@@ -18,12 +18,12 @@ $(document).ready(function(){
 	}
 	
 	//To Top
-	if($('#toTop').length){
+	if($('#to-top').length){
 		var toTop = function(){
 			if($(window).scrollTop() > 1){
-				$('#toTop').css({'bottom':'20px'});
+				$('#to-top').css({'opacity':'1'});
 			}else{
-				$('#toTop').css({'bottom':'-110px'});
+				$('#to-top').css({'opacity':'0'});
 			}
 		};
 		toTop();
@@ -31,14 +31,14 @@ $(document).ready(function(){
 			toTop();
 		});
 		
-		$('#toTop').on('click', function(e){
+		$('#to-top').on('click', function(e){
 			event.preventDefault();
 			$('html,body').animate({scrollTop : 0}, 800);
 		});
 	}
 	
 	//Animate anchor link
-	$('.mainNav a').on('click', function(e){
+	$('.navbar-nav a').on('click', function(e){
 		event.preventDefault();
 		$('html,body').animate({
 			scrollTop: $($(this).attr('href')).offset().top

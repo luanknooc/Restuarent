@@ -21,7 +21,7 @@ body {
     display: block;
     position: relative;
     font-family: 'Montserrat-Regular'; }
-    body #wrapper .navbar.navbar-default, body #wrapper .navbar.navbar-default .navbar-brand img, body #wrapper .carousel .slide-title a span, body #wrapper #menu .lunch-time ul li.book-now span, body #wrapper #menu .dinner-time ul li.book-now span, body #wrapper #about-us .col-md-4 img {
+    body #wrapper .navbar.navbar-default, body #wrapper .navbar.navbar-default .navbar-brand img, body #wrapper .carousel .slide-title a span, body #wrapper #menu .lunch-time ul li.book-now span, body #wrapper #menu .dinner-time ul li.book-now span, body #wrapper #about-us .col-md-4 img, body #wrapper #contact-us form .btn-default, body #wrapper #to-top {
       -o-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
@@ -36,7 +36,10 @@ body {
   /* Menu */
   /* News	*/
   /* About Us */
-  /* Social */ }
+  /* Social */
+  /* contact-us */
+  /* Footer */
+  /* To Top */ }
   #wrapper .navbar.navbar-default {
     background: url(../images/bg-header.png) repeat top left;
     display: block;
@@ -263,5 +266,73 @@ body {
       padding-bottom: 15px; }
       #wrapper #social .face h3, #wrapper #social .insta h3 {
         margin-top: -35px; }
+  #wrapper #contact-us {
+    display: block;
+    margin: 80px auto 0;
+    position: relative;
+    background: url(../images/bg-pattern.png) repeat top left;
+    border: 1px solid #ffc499; }
+    #wrapper #contact-us .col-md-6 {
+      padding-left: 0;
+      padding-right: 0; }
+    #wrapper #contact-us form {
+      padding: 25px;
+      display: block;
+      overflow: hidden; }
+      #wrapper #contact-us form .form-control {
+        border: 1px solid #e1e1e1;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none; }
+      #wrapper #contact-us form .btn-default {
+        float: right;
+        background-color: #f47920;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        width: 100%; }
+        #wrapper #contact-us form .btn-default:hover {
+          background-color: #333; }
+      #wrapper #contact-us form label {
+        font-size: 16px;
+        color: #999;
+        font-weight: normal; }
+    #wrapper #contact-us .maps {
+      float: right; }
+      #wrapper #contact-us .maps img {
+        border-left: 1px solid #ffc499; }
+  #wrapper #footer {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #373d42;
+    margin: 60px auto 0; }
+    #wrapper #footer ul {
+      list-style: none;
+      color: #e2e2e2;
+      padding: 40px 0;
+      border-bottom: 1px solid #555555; }
+      #wrapper #footer ul li {
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 15px; }
+        #wrapper #footer ul li:first-child {
+          padding-left: 0; }
+    #wrapper #footer p {
+      color: #e2e2e2;
+      font-size: 14px;
+      padding: 30px 0; }
+  #wrapper #to-top {
+    position: fixed;
+    right: 50%;
+    margin-right: -650px;
+    bottom: 40px;
+    z-index: 20;
+    width: 51px;
+    height: 99px;
+    background: url(../images/to-top.png) no-repeat top left;
+    cursor: pointer; }
+    #wrapper #to-top:hover {
+      bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
