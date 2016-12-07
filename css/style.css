@@ -35,7 +35,8 @@ body {
   */
   /* Menu */
   /* News	*/
-  /* About Us */ }
+  /* About Us */
+  /* Social */ }
   #wrapper .navbar.navbar-default {
     background: url(../images/bg-header.png) repeat top left;
     display: block;
@@ -246,5 +247,21 @@ body {
         color: #333;
         text-align: left;
         text-indent: 10px; }
+  #wrapper #social {
+    display: block;
+    margin: 100px auto 0;
+    position: relative; }
+    #wrapper #social .col-md-6 {
+      padding-left: 0;
+      padding-right: 0; }
+    #wrapper #social .face, #wrapper #social .insta {
+      background: url(../images/bg-pattern.png) repeat top left;
+      border: 1px solid #ffc499;
+      display: block;
+      width: 98%;
+      text-align: center;
+      padding-bottom: 15px; }
+      #wrapper #social .face h3, #wrapper #social .insta h3 {
+        margin-top: -35px; }
 
 /*# sourceMappingURL=style.css.map */

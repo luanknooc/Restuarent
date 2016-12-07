@@ -333,4 +333,25 @@ body {
 			}
 		}
 	}
+	/* Social */
+	#social{
+		display:block;
+		margin: 100px auto 0;
+		position: relative;
+		.col-md-6{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.face, .insta{
+			background: url(../images/bg-pattern.png) repeat top left;
+			border: 1px solid #ffc499;
+			display: block;
+			width: 98%;
+			text-align: center;
+			padding-bottom: 15px;
+			h3{
+				margin-top: -35px;
+			}
+		}
+	}
 }
